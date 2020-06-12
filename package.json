@@ -1,0 +1,61 @@
+{
+  "name": "ecmascript-quiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:webpack",
+    "build:webpack": "webpack --mode production",
+    "watch": "npm run watch:webpack",
+    "watch:webpack": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "react": "0.0.0-experimental-aae83a4b9",
+    "react-dom": "0.0.0-experimental-aae83a4b9",
+    "styled-components": "^5.0.1",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/google.analytics": "0.0.40",
+    "@types/gtag.js": "0.0.3",
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^5.0.1",
+    "comlink-loader": "^2.0.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^2.0.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "url-loader": "^4.0.0",
+    "webpack": "^4.42.0",
+    "webpack-bundle-analyzer": "^3.6.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-manifest-plugin": "^2.2.0",
+    "webpack-pwa-manifest": "^4.2.0"
+  },
+  "keywords": [],
+  "author": "uhyo <uhyo@uhy.ooo>",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
