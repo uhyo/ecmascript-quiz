@@ -5,7 +5,7 @@ const BlankStyle = styled.span`
   display: inline-block;
   width: 6ex;
   height: calc(1.2em + 8px);
-  vertical-align: -6px;
+  vertical-align: -7px;
   background-color: white;
   border-radius: 4px;
   border: 1px solid #ddcccc;

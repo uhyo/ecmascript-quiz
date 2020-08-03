@@ -3,6 +3,7 @@ import { Question, blankMark } from "./data/question";
 import { QuestionPage } from "./pages/Question";
 
 const testQ: Question = {
+  sec: "2020.sec-utf16encoding",
   type: "text",
   title: "Fill the blank with the correct answer.",
   text: `The first edition of the ECMAScript specification was published in ${blankMark}.`,
